@@ -4,12 +4,116 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Abdurahmon</title>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/flexboxgrid.css">
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+  <div class="wrapper-big">
+    <div class="wrapper-big__hearder header">
+      <div class="header__imgs">
+        <div class="header__img">
+          <img src="./img/hero.png" alt="header">
+        </div>
+        <a href="index.html" class="header__title">abdurahmon</a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#"><i class='bx header__icons bx-home'></i>Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><i class='bx header__icons bx-book-content'></i>About Me</a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><i class='bx header__icons bx-code-alt'></i>Services</a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><i class='bx header__icons bx-credit-card'></i>Blogs</a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><i class='bx header__icons bx-book-bookmark'></i>Portfolio</a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><i class='bx header__icons bx-location-plus'></i>Contact Me</a></li>
+          </ul>
+        </nav>
+        <ul class="header__socials socials">
+          <li class="socials__item"><a class="socials__link" href="#"><i class='bx so bxl-telegram'></i></a></li>
+          <li class="socials__item"><a class="socials__link" href="#"><i class='bx so bxl-youtube' ></i></a></li>
+          <li class="socials__item"><a class="socials__link" href="#"><i class='bx bxl-github'></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrapper-big__hero hero">
+      <main class="p-relative" id="hero">
+        <section id="hero__elements">
+          <div class="hero__header">
+            <div class="hero__header-con container">
+              <h2 class="hero__header-title">Abdurahmon</h2>
+              <button class="hero__btn"><i class='bx bx-menu'></i></button>
+            </div>
+          </div>
+          <div id="particles-js"></div>
+          <div class="hero__container container  p-relativ row middle-md" >
+            <div class="hero__block col-lg-6e col-md-6 col-sm-6 col-xs-12 ">  
+              <div class="hero__element">
+                <h6 class="hero__sub-title">Hello, I am</h6>
+                <h1 class="hero__title">Abdurahmon Vahobov</h1>
+                <p class="hero__des">I Am <span class="hero__typer"></span></p>
+                <p class="hero__text">I develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+                <a class="main__btn main__btn--before" href="#">Donwload CV</a>
+              </div>
+            </div>
+            <div class="hero__block col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="hero__element hero__img">
+                <img src="./img/sercul.svg" alt="sircul">
+                <img class="hero__main-img" src="./img/hero-img.svg" alt="img">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about">
+          <div class="about__container container">
+            <div class="about__row row"> 
+              <div class="about__block col-md-6 col-sm-12 col-xs-12">
+                <h2 class="about__texnical-title">Technologies</h2>
+                <div class="about__imgs">
+                  <div class="about__img">
+                    <img src="./img/tex2.png" alt="texnalogies">
+                  </div>
+                  <div class="about__img">
+                    <img src="./img/tex7.png" alt="texnalogies">
+                  </div>
+                  <div class="about__img">
+                    <img src="./img/tex8.png" alt="texnalogies">
+                  </div>
+                  <div class="about__img">
+                    <img src="./img/tex4.png" alt="texnalogies">
+                  </div>
+                  <div class="about__img">
+                    <img src="./img/tex5.png" alt="texnalogies">
+                  </div>
+                  <div class="about__img">
+                    <img src="./img/tex6.png" alt="texnalogies">
+                  </div>
+                  <div class="about__img about__padd">
+                    <img src="./img/tex1.png" alt="texnalogies">
+                  </div>
+                  <div class="about__img">
+                    <img src="./img/tex3.png" alt="texnalogies">
+                  </div>
+                </div>
+              </div>
+              <div class="about__block col-md-6 col-sm-12 col-xs-12">
+                <div class="about__des">
+                  <h2 class="about__title"> About me.</h2>
+                  <h3 class="about__sub-title">I'm a Freelancer Front-end Developer with over 3 years of experience. </h3>
+                  <p class="about__text">I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="./js/particles.js"></script>
+  <script src="./js/app.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

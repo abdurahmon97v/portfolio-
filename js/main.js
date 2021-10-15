@@ -9,25 +9,9 @@ var typed = new Typed('.hero__typer', {
 
 
 btn.addEventListener('click',function(){
-  header.classList.toggle('translet')
+  header.classList.toggle('translet');
 })
 
-let array = document.querySelectorAll('.portfolio__start')
-let bx = document.querySelectorAll('.bx-power-off')
-array.forEach((item) => {
-  
-  item.addEventListener('click', ()=>{
-    item.classList.add('none');
-    
-  })
-  bx.forEach((item2) => {
-    item2.addEventListener('click', ()=>{
-      
-      item.classList.remove('none')
-    })
-    
-  })
-})
 
 
 

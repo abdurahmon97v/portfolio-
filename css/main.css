@@ -3,11 +3,12 @@ html {
 }
 * {
   scrollbar-width: auto;
-  scrollbar-color: #2fbf71 ;
+  scrollbar-color: #2fbf71;
 }
 
 *::-webkit-scrollbar {
   width: 10px;
+ 
 }
 
 *::-webkit-scrollbar-track {
@@ -32,7 +33,7 @@ html {
 .portfolio__iframe::-webkit-scrollbar-thumb {
   background-color: #2fbf71;
   border-radius: 6px;
-  border: 3px solid #ffffff;
+  
 }
 *,
 *::before,
@@ -54,6 +55,23 @@ html {
   --bold-colr-light:#0b0b13;
   --regular-colr-darc: rgba(255, 255, 255, 0.8);
 }
+.darc{
+  --bod-color:#10101A;
+  --bold-colr-light:#fff;
+  --card-light:#0B0B13;
+  --hed-light:#0C0C14;
+  --hero-light:#10101A;
+  --hed-light:#0C0C14;
+  --header-link-dark: rgba(255, 255, 255, 0.8);
+  --regular-colr-light: rgba(255, 255, 255, 0.8);
+
+}
+.darc .hero__des{
+  color: #fff;
+}
+.testimonial__title{
+  color: var(--bold-colr-light);
+}
 body {
   margin: 0;
   padding: 0;
@@ -63,9 +81,17 @@ body {
   min-height: 100vh;
   background-color:var(--bod-color);
   font-family: 'Rubik',monospace;
+  line-height: 1.7;
+  font-size: 15px;
+  font-weight: 300;
   /* overflow: hidden; */
 }
-
+.contact__iner-title{
+  font-weight: 500;
+  color: var(--bold-colr-light);
+  font-size: 22px;
+  margin-bottom: 20px;  
+}
 img {
   max-width: 100%;
   height: auto;
@@ -191,7 +217,6 @@ p{
   font-size: 12px;
   font-weight: 600;
   line-height: 1.7;
-  font-size: 15px;
   letter-spacing: 3px;
   text-transform: uppercase;
   line-height: 18px; 
@@ -278,7 +303,7 @@ p{
   letter-spacing: 2px;
   padding: 15px 30px;
   font-size: 14px;
-  color: var(--bod-color);
+  color: #fff;
   background: #2fbf71;
   transition: color 0.4s ease, background 0.4s ease;
   position: relative;
@@ -293,7 +318,7 @@ p{
 .main__btn--before::before {
   position: absolute;
   top: 8px;
-  left: 7px;
+  left: 3px;
   width: 100%;
   height: 43px;
   content: "";
@@ -419,7 +444,6 @@ p{
 }
 #about{
   padding-top: 100px;
-  padding-bottom: 100px;
 }
 .about__block{
   padding: 0;
@@ -430,7 +454,7 @@ p{
   right: 0;
   top: 0;
   padding: 20px;
-  background-color: var(--bod-color);
+  background-color: var(--card-light);
 }
 .about__imgs{
   display: flex;
@@ -482,6 +506,7 @@ p{
 .about__texnical-title{
   position: relative;
   font-weight: 300;
+  color: var(--bold-colr-light);
   font-size: 30px;
   vertical-align: top;
   text-transform: uppercase;
@@ -542,10 +567,14 @@ p{
   position: relative;
   font-weight: 300;
   font-size: 30px;
+  color: var(--bold-colr-light);
   vertical-align: top;
   text-transform: uppercase;
   letter-spacing: 6px;
   margin-bottom: 40px;
+}
+.complects__text{
+  color: var(--bold-colr-light);
 }
 .about__title::before{
   content: "";
@@ -691,10 +720,7 @@ p{
   color: var(--regular-colr-light);
 
 }
-#do{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+
 .do__des{
   align-items: center;
   display: flex;
@@ -735,6 +761,14 @@ p{
 .do__des:hover .do__text
 {
   color: var(--bod-color);
+}
+.darc .do__des:hover .do__icon,
+.darc .do__des:hover .do__title,
+.darc .do__des:hover .do__text{
+  color: #fff;
+}
+.darc .do__icon {
+  color: #fff;
 }
 @media screen and (max-width:700px) {
   .education__elements{
@@ -828,10 +862,6 @@ p{
     margin-left: 0;
   }
 }
-#portfolio{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 .portfolio__title{
   margin-bottom: 70px;
 }
@@ -907,7 +937,6 @@ p{
 }
 
 #contact{
-  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -994,6 +1023,12 @@ p{
   padding: 6px 12px;
   color: var(--bold-colr-light);
 }
+.darc .contact__textarea{
+  background-color: var(--card-light);
+}
+.darc .contact__input{
+  background-color: var(--card-light);
+}
 .contact__btn{
   border: none;
   display: inline;
@@ -1008,4 +1043,26 @@ p{
 .contact__iframe{
   width: 100%;
   height: 100%;
+}
+.button__dark{
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 25px;
+  border-radius: 50%;
+  top: 20px;
+  z-index: 10;
+  background-color: var(--bold-colr-light);
+  border: none;
+  cursor: pointer;
+}
+.bxs-moon{
+  font-size: 20px;
+  color: var(--bod-color);
+}
+@media screen and (max-width:1050px) {
+  .button__dark{
+    right: 21px;
+    top: 91px;
+  }
 }

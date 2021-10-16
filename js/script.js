@@ -2,6 +2,7 @@ $(document).ready(function(){
   $('.testimonial__row').slick({
     arrows:false,
     dots:true,
+    speed: 300,
     adaptiveHeight:true,
     slidesToShow:2,
     responsive: [
@@ -37,6 +38,8 @@ $(document).ready(function(){
   $('.portfolio__all').slick({
     arrows:false,
     dots:true,
+    autoplaySpeed: 3000,
+    autoplay: true,
     adaptiveHeight:true,
     slidesToShow:1,
     responsive: [
@@ -67,3 +70,4 @@ $(document).ready(function(){
     ]
   });
 })
+
